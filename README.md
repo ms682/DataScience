@@ -3,7 +3,9 @@
 ### Important Links
 [Yelp Dataset Download](https://www.yelp.com/dataset_challenge/dataset)  
 [Pittsburgh Health Violation Data](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/1a1329e2-418c-4bd3-af2c-cc334e7559af)  
-[Yelp Dataset Examples](https://github.com/Yelp/dataset-examples)
+[Yelp Dataset Examples](https://github.com/Yelp/dataset-examples)  
+[postgreSQL](http://postgresapp.com/)  
+
 
 ### Data Dictionaries
 [Pittsburgh Health Code Violations Data Dictionary](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/4b4588dd-86f1-478a-bca5-298dfe8eb9d1)
