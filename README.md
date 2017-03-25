@@ -1,5 +1,5 @@
 # Team 13 Data Science Project - Predicting Health Code Violations from Yelp Data :crystal_ball:
-<a href="url"><img src="https://s3-media3.fl.yelpcdn.com/assets/srv0/styleguide/24e1fe240f00/assets/img/brand_guidelines/yelp_fullcolor_outline.png" align="left"></a>
+<a href="url"><img src="https://s3-media3.fl.yelpcdn.com/assets/srv0/styleguide/24e1fe240f00/assets/img/brand_guidelines/yelp_fullcolor_outline.png" align="left" width="50%" height="50%"></a>  
 ### Important Links
 [Yelp Dataset Download](https://www.yelp.com/dataset_challenge/dataset)  
 [Pittsburgh Health Violation Data](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/1a1329e2-418c-4bd3-af2c-cc334e7559af)  
