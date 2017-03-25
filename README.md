@@ -6,6 +6,8 @@
 [Yelp Dataset Examples](https://github.com/Yelp/dataset-examples)  
 [postgreSQL](http://postgresapp.com/)  
 
+### Amazon RDS PostgreSQL Endpoint
+[sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com:5432](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com:5432)    
 
 ### Data Dictionaries
 [Pittsburgh Health Code Violations Data Dictionary](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/4b4588dd-86f1-478a-bca5-298dfe8eb9d1)
