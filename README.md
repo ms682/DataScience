@@ -81,7 +81,8 @@
 }
 ```
 #### yelp_academic_dataset_tip.json
-```json{
+```json
+{
     "text":"text of the tip",
     "date":"date formatted like 2009-12-19",
     "likes":compliment count,
