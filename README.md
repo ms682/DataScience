@@ -79,7 +79,9 @@ There are 5 tables and two views in the database.
     b.medium,
     b.high
    FROM restaurants a
-     JOIN violations b ON levenshtein(btrim(a.name, '"'::text), b.facility_name) < 3 AND btrim(a.postal_code) = btrim(b.zip) AND levenshtein(a.address, (b.num || ' '::text) || b.street) < 4;
+     JOIN violations b ON levenshtein(btrim(a.name, '"'::text), b.facility_name) < 3 
+     AND btrim(a.postal_code) = btrim(b.zip) 
+     AND levenshtein(a.address, (b.num || ' '::text) || b.street) < 4;
 ```
 ### Data Dictionaries
 [Pittsburgh Health Code Violations Data Dictionary](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/4b4588dd-86f1-478a-bca5-298dfe8eb9d1)
