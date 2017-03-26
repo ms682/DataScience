@@ -45,15 +45,41 @@ There are 5 tables and two views in the database.
    OR upper(b.categories) ~~ '%FOOD%'::text)
    AND b.state ~~ '%PA%'::text;
   ```
- * rest_vltns - materialized view of the *business* table inner joined to the *violaitons* table, with some cleaning of the data.
- 
+ * rest_vltns - materialized view of the *business* table inner joined to the *violaitons* table, with some cleaning of the data
 ```sql
-select A.business_id, btrim( A.name, '"') as name, A.categories, A.attributes, A.hours, A.stars, A.review_count, A.is_open,  A.longitude, A.latitude, A.address, A.city, A.postal_code, A.neighborhood, b._id, b.facility_name, b.encounter, b.id, b.placard_st, b.bus_st_date, b.inspect_dt, b.start_time, b.end_time, b.description, b.num ||' '|| b.street as b_address, b.city,  b.rating, b.description_new, b.low, b.medium, b.high
-from restaurants A
-inner join public.violations b
-on levenshtein(btrim( a.name,'"'), b.facility_name) <3
-and trim(a.postal_code) = trim(b.zip)
-and levenshtein(a.address, b.num ||' '|| b.street) <4;
+ SELECT a.business_id,
+    btrim(a.name, '"'::text) AS name,
+    a.categories,
+    a.attributes,
+    a.hours,
+    a.stars,
+    a.review_count,
+    a.is_open,
+    a.longitude,
+    a.latitude,
+    a.address,
+    a.city,
+    a.postal_code,
+    a.neighborhood,
+    b._id,
+    b.facility_name,
+    b.encounter,
+    b.id,
+    b.placard_st,
+    b.bus_st_date,
+    b.inspect_dt,
+    b.start_time,
+    b.end_time,
+    b.description,
+    (b.num || ' '::text) || b.street AS b_address,
+    b.city AS b_city,
+    b.rating,
+    b.description_new,
+    b.low,
+    b.medium,
+    b.high
+   FROM restaurants a
+     JOIN violations b ON levenshtein(btrim(a.name, '"'::text), b.facility_name) < 3 AND btrim(a.postal_code) = btrim(b.zip) AND levenshtein(a.address, (b.num || ' '::text) || b.street) < 4;
 ```
 ### Data Dictionaries
 [Pittsburgh Health Code Violations Data Dictionary](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/4b4588dd-86f1-478a-bca5-298dfe8eb9d1)
