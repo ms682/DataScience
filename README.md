@@ -41,9 +41,9 @@ There are 5 tables and one view in the database.
     btrim(ltrim(b.business_id, 'b'::text), ''''::text) AS business_id,
     b.stars
    FROM business b
-  WHERE (upper(b.categories) ~~ '%RESTAURANTS%'::text 
-  OR upper(b.categories) ~~ '%FOOD%'::text) +
-  AND b.state ~~ '%PA%'::text;
+   WHERE (upper(b.categories) ~~ '%RESTAURANTS%'::text 
+   OR upper(b.categories) ~~ '%FOOD%'::text)
+   AND b.state ~~ '%PA%'::text;
   ```
 
 ### Data Dictionaries
