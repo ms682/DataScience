@@ -7,7 +7,42 @@
 [postgreSQL](http://postgresapp.com/)  
 
 ### Amazon RDS PostgreSQL Endpoint
-[sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com:5432)  
+ To connect to the project database, you will need to install a postgresql client, suchh as [pgAdmin](https://www.pgadmin.org/). 
+ 
+ #### Database Connection  
+ Create a new server with the following parameters: 
+    **Hostname:** [sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com)
+    **Port:** 5432
+    **User:** mvsternds  
+    
+#### Tables & Views
+There are 5 tables and one view in the database.
+ * business 
+ * checkin
+ * reviews
+ * tips
+ * violations
+ * restaurants (view) - materialized view of the *business* table with the following definition. (Work in prgress)
+  ```sql
+   SELECT btrim(ltrim(b.state, 'b'::text), ''''::text) AS state,
+    b.hours,
+    btrim(ltrim(b.type, 'b'::text), ''''::text) AS type,
+    b.review_count,
+    btrim(ltrim(b.neighborhood, 'b'::text), ''''::text) AS neighborhood,
+    b.latitude,
+    b.is_open,
+    b.attributes,
+    btrim(ltrim(b.name, 'b'::text), ''''::text) AS name,
+    b.address,
+    b.city,
+    b.longitude,
+    b.categories,
+    b.postal_code,
+    b.business_id,
+    b.stars
+   FROM business b
+  WHERE (upper(b.categories) ~~ '%RESTAURANTS%'::text OR upper(b.categories) ~~ '%FOOD%'::text) AND b.state ~~ '%PA%'::text;
+  ```
 
 ### Data Dictionaries
 [Pittsburgh Health Code Violations Data Dictionary](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/4b4588dd-86f1-478a-bca5-298dfe8eb9d1)
