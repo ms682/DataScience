@@ -10,9 +10,9 @@
  To connect to the project database, you will need to install a postgresql client, suchh as [pgAdmin](https://www.pgadmin.org/). 
  
  #### Database Connection  
- Create a new server with the following parameters: 
-    **Hostname:** [sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com)
-    **Port:** 5432
+ Create a new server with the following parameters:  
+    **Hostname:** [sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com)  
+    **Port:** 5432  
     **User:** mvsternds  
     
 #### Tables & Views
