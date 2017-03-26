@@ -33,15 +33,17 @@ There are 5 tables and one view in the database.
     b.is_open,
     b.attributes,
     btrim(ltrim(b.name, 'b'::text), ''''::text) AS name,
-    b.address,
-    b.city,
+    btrim(ltrim(b.address, 'b'::text), ''''::text) AS address,
+    btrim(ltrim(b.city, 'b'::text), ''''::text) AS city,
     b.longitude,
     b.categories,
-    b.postal_code,
-    b.business_id,
+    btrim(ltrim(b.postal_code, 'b'::text), ''''::text) AS postal_code,
+    btrim(ltrim(b.business_id, 'b'::text), ''''::text) AS business_id,
     b.stars
    FROM business b
-  WHERE (upper(b.categories) ~~ '%RESTAURANTS%'::text OR upper(b.categories) ~~ '%FOOD%'::text) AND b.state ~~ '%PA%'::text;
+  WHERE (upper(b.categories) ~~ '%RESTAURANTS%'::text 
+  OR upper(b.categories) ~~ '%FOOD%'::text) +
+  AND b.state ~~ '%PA%'::text;
   ```
 
 ### Data Dictionaries
