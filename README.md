@@ -45,7 +45,7 @@ There are 5 tables and two views in the database.
    OR upper(b.categories) ~~ '%FOOD%'::text)
    AND b.state ~~ '%PA%'::text;
   ```
- * rest_vltns - materialized view of the *business* table inner joined to the *violaitons* table, with some cleaning of the data
+ * rest_vltns (view) - materialized view of the *business* table inner joined to the *violations* table, with some cleaning of the data
 ```sql
  SELECT a.business_id,
     btrim(a.name, '"'::text) AS name,
