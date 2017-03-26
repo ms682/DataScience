@@ -22,7 +22,7 @@ There are 5 tables and one view in the database.
  * reviews
  * tips
  * violations
- * restaurants (view) - materialized view of the *business* table with the following definition. (Work in prgress)
+ * restaurants (view) - materialized view of the *business* table with the following definition. (Work in progress)
   ```sql
    SELECT btrim(ltrim(b.state, 'b'::text), ''''::text) AS state,
     b.hours,
