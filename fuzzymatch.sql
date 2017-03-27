@@ -4,7 +4,4 @@ left join public.violations b
 on levenshtein(btrim( a.name,'"'), b.facility_name) <3
 and trim(a.postal_code) = trim(b.zip)
 and levenshtein(a.address, b.num ||' '|| b.street) <4
-inner join select c.facility_name, max(inspect_dt) as maxdt from 
-public.violations c on
-b.facility_name = c.facility_name and b.inspect_dt = maxdt
 order by a.business_id;
