@@ -5,6 +5,7 @@
 [Pittsburgh Health Violation Data](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/1a1329e2-418c-4bd3-af2c-cc334e7559af)  
 [Yelp Dataset Examples](https://github.com/Yelp/dataset-examples)  
 [postgreSQL](http://postgresapp.com/)  
+:star2: Check out the [Projects] section for the project backlog  
 
 ### Amazon RDS PostgreSQL Endpoint
  To connect to the project database, you will need to install a postgresql client, suchh as [pgAdmin](https://www.pgadmin.org/). 
