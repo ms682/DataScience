@@ -13,7 +13,8 @@
  Create a new server with the following parameters:  
     **Hostname:** [sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com)  
     **Port:** 5432  
-    **User:** mvsternds  
+    **User:** mvsternds OR mvsternds2
+    *Contact [Max](mailto:cmv293@stern.nyu.edu) with any questions or issues*
     
 #### Tables & Views
 There are 5 tables and two views in the database.
