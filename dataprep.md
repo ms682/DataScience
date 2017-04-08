@@ -1,8 +1,8 @@
 ### Violations Dataset
   * Record Hierarchy
-   * Restaurants have many inspections across several dates, count of inspection/restaurant varies
-   * Which inspection should we use for each restaurant? 
-    +Inspections have many violations
+   + Restaurants have many inspections across several dates, count of inspection/restaurant varies
+   + Which inspection should we use for each restaurant? 
+   + Inspections have many violations
     +Each violation has a risk ranking (verify that each vilolation has one risk label of c(LOW, MED, HIGH)
   * Need to combine records from each inspection
   * We will ignore most features in this dataset because we cannot predict a violation from the violation itself, unless we want to featurize informaiton about *prior* violaitons
