@@ -13,5 +13,15 @@
 * n-gram extraction or bag of words? Performance and interpretability tradeoffs
   
 ### Both Datasets
-* Need to consolidate multiple records per restaurant to one record per restaurant
+* Create a flag “Did most recent inspection have a medium / high violation” = Yes, No
+  * Categorize no violation data as “No"
+  * Categorize low risk violations from dataset as “No” = will likely not be perceived by customers who review on Yelp 
+  * For each restaurant, bring only the most recent inspection row to new collapsed training dataset
+  * For "Did most recent inspection have a medium / high violation” flag = Yes
+	   1) look at most recent inspection
+	   2) check if it had medium or high violation
+	   3) set flag as Yes
+* Make a unique ID per restaurant in violations dataset
+* Capture in violations dataset date of last inspection then only look at Yelp reviews prior to that date
+* Mutliple violtaions. Need to consolidate multiple records per restaurant to one record per restaurant
 * Identify key "lazy" features that we don't have to prep and use these in a logreg model for baseline performance
