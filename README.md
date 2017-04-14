@@ -5,6 +5,7 @@
 [Pittsburgh Health Violation Data](https://data.wprdc.org/dataset/allegheny-county-restaurant-food-facility-inspection-violations/resource/1a1329e2-418c-4bd3-af2c-cc334e7559af)  
 [Yelp Dataset Examples](https://github.com/Yelp/dataset-examples)  
 [postgreSQL](http://postgresapp.com/)  
+:exclamation: Check out the [Projects](https://github.com/ms682/DataScience/projects) section for the project backlog  
 
 ### Amazon RDS PostgreSQL Endpoint
  To connect to the project database, you will need to install a postgresql client, suchh as [pgAdmin](https://www.pgadmin.org/). 
@@ -13,7 +14,8 @@
  Create a new server with the following parameters:  
     **Hostname:** [sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com](sterndsyelp.cawzspvmqd5q.us-east-1.rds.amazonaws.com)  
     **Port:** 5432  
-    **User:** mvsternds  
+    **User:** mvsternds OR mvsternds2  
+ :question:   *Contact [Max](mailto:cmv293@stern.nyu.edu) with any questions or issues*
     
 #### Tables & Views
 There are 5 tables and two views in the database.
