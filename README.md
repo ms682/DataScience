@@ -1,4 +1,4 @@
- :star: # Team 13 Data Science Project - Predicting Inspection Violations from Yelp Data  :crystal_ball:
+# Team 13 Data Science Project - Predicting Inspection Violations from Yelp Data  :crystal_ball:
 ##  :star:  TEAM MEETING SATURDAY APRIL 29, 9:00 AM SOSNOFF LOUNGE :star:
  ### Important Updates  - April 25, 2017
   1. We are working with the Toronto [Yelp](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjy9KmS0MDTAhWD44MKHd6LBfcQFgglMAA&url=https%3A%2F%2Fwww.yelp.com%2Fdataset_challenge&usg=AFQjCNGnTkUSU1hQghw6jiTs_WSz6_4eXQ&sig2=lm7x5yMFkVWyTIcQ3W17Sg) data and the [Toronto Restaurant Inspection](http://www.toronto.ca/health/dinesafe/) Datasets
@@ -7,7 +7,9 @@
 *Note that we still need to combine records in this dataset where the inepsction date and business ID are the same*
  ID 
  ### To Do
- 1. Merge records where the inspeciton date and bizID are the same
- 2. n-gram vectorization and extraction (after removal of stop words)
- 3. train/test split
- 4. Model Selection, training, and testing (repeat as needed)
+ 1. Add column headers from postgres - Max
+ 2. Merge records where the inspeciton date and bizID are the same - Arnab 
+ 3. n-gram vectorization and extraction (after removal of stop words)
+ 4. train/test split
+ 5. Model Selection, training, and testing (repeat as needed)
+ 6. Report Writeup - Michelle (started)
