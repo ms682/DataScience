@@ -7,10 +7,12 @@
 *Note that we still need to combine records in this dataset where the inepsction date and business ID are the same*
  ID 
  ### To Do
- 1. Add column headers from postgres :check:
- 2. Clean review text stop words :check:
- 3. Merge records where the inspeciton date and bizID are the same - Arnab 
- 4. n-gram vectorization and extraction (after removal of stop words)
- 5. train/test split
- 6. Model Selection, training, and testing (repeat as needed)
- 7. Report Writeup - Michelle (started)
+ 1. Add column headers from postgres :heavy_check_mark:
+ 2. Clean review text stop words :heavy_check_mark:
+ 3. Merge records where the inspeciton date and bizID are the same and make aggegate features - Arnab 
+ 4. Extract attrbutes column into features - Michelle
+ 5. Engineer other features
+ 6. n-gram vectorization and extraction (after removal of stop words)
+ 7. train/test split
+ 8. Model Selection, training, and testing (repeat as needed)
+ 9. Report Writeup - Michelle (started)
