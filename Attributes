@@ -1,3 +1,5 @@
+#http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html
+
 import sklearn as sk
 from sklearn.feature_extraction import DictVectorizer
 dv = DictVectorizer(sparse=False)
