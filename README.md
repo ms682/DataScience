@@ -7,12 +7,12 @@
 *Note that we still need to combine records in this dataset where the inepsction date and business ID are the same*
  ID 
  ### To Do
-- [ ] Add column headers from postgres 
- 2. Clean review text stop words 
- 3. Merge records where the inspeciton date and bizID are the same and make aggegate features 
- 4. Extract attrbutes column into features - Michelle 
- 5. Engineer other features
- 6. n-gram vectorization and extraction (after removal of stop words)
- 7. train/test split
- 8. Model Selection, training, and testing (repeat as needed)
- 9. Report Writeup - Michelle (started)
+- [x] Add column headers from postgres 
+- [x] Clean review text stop words 
+- [x] Merge records where the inspeciton date and bizID are the same and make aggegate features 
+- [ ] Extract attrbutes column into features - Michelle 
+- [ ] Engineer other features
+- [ ] n-gram vectorization and extraction (after removal of stop words)
+- [ ] train/test split
+- [ ] Model Selection, training, and testing (repeat as needed)
+- [ ] Report Writeup - Michelle (started)
