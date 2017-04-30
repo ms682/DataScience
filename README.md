@@ -16,3 +16,5 @@
 - [ ] train/test split
 - [ ] Model Selection, training, and testing (repeat as needed)
 - [ ] Report Writeup - Michelle (started)
+
+![Whiteboard](https://i.groupme.com/1328x747.png.98af829fd6854346866eac24305a6e12.large)
