@@ -7,9 +7,9 @@
 *Note that we still need to combine records in this dataset where the inepsction date and business ID are the same*
  ID 
  ### To Do
- 1. Add column headers from postgres :heavy_check_mark:
- 2. Clean review text stop words :heavy_check_mark:
- 3. Merge records where the inspeciton date and bizID are the same and make aggegate features :heavy_check_mark:
+- [ ] Add column headers from postgres 
+ 2. Clean review text stop words 
+ 3. Merge records where the inspeciton date and bizID are the same and make aggegate features 
  4. Extract attrbutes column into features - Michelle 
  5. Engineer other features
  6. n-gram vectorization and extraction (after removal of stop words)
