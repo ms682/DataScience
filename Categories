@@ -1,0 +1,25 @@
+import sklearn as sk
+from sklearn.feature_extraction import DictVectorizer
+dv = DictVectorizer(sparse=False)
+
+categories_dict = dict()
+categories_dict = obs['categories'].to_dict()
+att_dict_20 = attributes_dict[20]
+
+categories_dict_len = len(categories_dict)
+
+categories_dict_list = []
+x = 0
+
+while x < categories_dict_len:
+    categories_dict_x = categories_dict[x]
+    categories_dict_list.append(categories_dict_x)
+    x = x+1
+
+new_categories_dict_list = []
+x = 0
+
+while x < categories_dict_len:
+    split_term = categories_dict_list[x].split(',')
+    new_categories_dict_list.append(split_term)
+    x = x+1
