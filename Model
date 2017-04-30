@@ -1,17 +1,23 @@
 # Import the libraries we will be using
 import numpy as np
 import pandas as pd
-from sklearn import metrics
-from sklearn.model_selection import train_test_split
-
-from scipy.spatial.distance import pdist, squareform
-from scipy.cluster.hierarchy import linkage, dendrogram
-
-from sklearn.cluster import KMeans
-from sklearn.neighbors import KNeighborsClassifier
-from scipy.spatial import distance
 
 from dstools import data_tools
+
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+
+lr = LogisticRegression()
+lr = lr.fit(data.drop(['column'], axis=1), data['column'])
+
+svm = LinearSVC()
+svm = svm.fit(data.drop(['column'], axis=1), data['column'])
+
 
 
 
