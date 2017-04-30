@@ -35,7 +35,6 @@ X_test_tfidf = tfidf_vectorizer.transform(X_test)
 
 model_v2 = LogisticRegression()
 model_v2.fit(X_train_tfidf, Y_train)
-
 print ("Area under the ROC curve on test data = %.3f" % metrics.roc_auc_score(model_v2.predict(X_test_counts), Y_test))
 
 
