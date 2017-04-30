@@ -11,12 +11,25 @@ from sklearn.linear_model import LogisticRegression
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
-lr = LogisticRegression()
-lr = lr.fit(data.drop(['column'], axis=1), data['column'])
+X = data['column1']
+Y = data['column2']
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, train_size=.75)
 
-svm = LinearSVC()
-svm = svm.fit(data.drop(['column'], axis=1), data['column'])
+binary_vectorizer = CountVectorizer(binary=True)
+binary_vectorizer.fit(X_train)
+X_train_binary = binary_vectorizer.transform(X_train)
+X_test_binary = binary_vectorizer.transform(X_test)
+
+model = LogisticRegression()
+model.fit(X_train_binary, Y_train)
+print ("Area under the ROC curve on test data = %.3f" % metrics.roc_auc_score(model.predict(X_test_binary), Y_test))
+fpr, tpr, thresholds = metrics.roc_curve(Y_test, model.predict_proba(X_test_binary)[:,1])
+
+
+
 
 
 
