@@ -10,9 +10,9 @@
 - [x] Add column headers from postgres 
 - [x] Clean review text stop words 
 - [x] Merge records where the inspeciton date and bizID are the same and make aggegate features 
-- [ ] Extract attrbutes column into features - Michelle 
-- [ ] Engineer other features
-- [ ] n-gram vectorization and extraction (after removal of stop words)
+- [x] Extract attrbutes column into features - Michelle 
+- [x] Engineer other features
+- [x] n-gram vectorization and extraction (after removal of stop words)
 - [ ] train/test split
 - [ ] Model Selection, training, and testing (repeat as needed)
 - [ ] Report Writeup - Michelle (started)
