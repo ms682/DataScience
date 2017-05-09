@@ -1,1 +1,0 @@
-select distinct description_new, LOW, Medium, High from public.violations
