@@ -1,4 +1,4 @@
-![alt text](http://www.fortefoundation.org/images/content/pagebuilder/stern_stacked.png "NYU Stern Logo") 
+![alt text](http://www.revitupreading.com/wordpress/wp-content/uploads/2014/10/nyu-stern-logo.jpg "NYU Stern Logo") 
 # Team 13 Data Science Project - Predicting Inspection Violations from Yelp Data
 #### This analysis was created as a term project for the *Data Science for Business Analytics* course at NYU Stern School of Business, Spring 2017
 
